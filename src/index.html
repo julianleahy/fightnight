@@ -2,67 +2,76 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Skrollr</title>
-        <meta name="description" content="working with skrollr library">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='http://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Skrollr</title>
+    <meta name="description" content="working with skrollr library">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
 
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- fade out header starting at the top of header until we reach offset of -400px -->
-        <header data-top="opacity: 1" data--400-top="opacity:0">
+    <!-- fade out header starting at the top of header until we reach offset of -400px -->
+    <header data-top="opacity: 1" data--400-top="opacity:0">
+        <div class="wrapper clearfix">
+
+            <h1 class="title">Cameron V
+                <span style="text-transform:lowercase">s</span> Parker</h1>
+            <p>Get Ready For Fight Night!</p>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- move the background position for subtle effect -->
+        <div id="profiles" data-bottom-top="background-position: 50% 0%" data-top-bottom="background-position: 50% -20%">
             <div class="wrapper clearfix">
 
-                <h1 class="title">Cameron V<span style="text-transform:lowercase">s</span> Parker</h1>
-                <p>Get Ready For Fight Night!</p>
-
-            </div>
-        </header>
-
-        <main>
-            <!-- move the background position for subtle effect -->
-            <div id="profiles"
-                 data-bottom-top="background-position: 50% 0%"
-                 data-top-bottom="background-position: 50% -20%"
-            >
-                <div class="wrapper clearfix">
-
-                    <div class="boxer boxerA">
-                        <div class="boxerImg"></div>
-                        <h2>Shane <br />Cameron</h2>
-                        <p>Donec consectetur egestas auctor. Nullam mattis lectus vel tellus semper, vel lacinia justo fringilla. Vestibulum semper pulvinar accumsan.</p>
-                    </div>
-
-                    <div class="boxer boxerB">
-                        <div class="boxerImg"></div>
-                        <h2>Joseph <br />Parker</h2>
-                        <p>Donec consectetur egestas auctor. Nullam mattis lectus vel tellus semper, vel lacinia justo fringilla. Vestibulum semper pulvinar accumsan.</p>
-                    </div>
-
+                <div class="boxer boxerA">
+                    <div class="boxerImg"></div>
+                    <h2>Shane
+                        <br />Cameron</h2>
+                    <p>Donec consectetur egestas auctor. Nullam mattis lectus vel tellus semper, vel lacinia justo fringilla.
+                        Vestibulum semper pulvinar accumsan.</p>
                 </div>
-            </div>
 
-            
-
-        </main>
-
-        <div id="boxingRing">
-            <div class="wrapper clearfix">
-
-                <div id="stage"></div>
+                <div class="boxer boxerB">
+                    <div class="boxerImg"></div>
+                    <h2>Joseph
+                        <br />Parker</h2>
+                    <p>Donec consectetur egestas auctor. Nullam mattis lectus vel tellus semper, vel lacinia justo fringilla.
+                        Vestibulum semper pulvinar accumsan.</p>
+                </div>
 
             </div>
         </div>
 
-     
-    </body>
+        <div id="boxingRing">
+            <div class="wrapper clearfix">
+                <div id="stage"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="wrapper clearfix">
+            <p>&copy; 2017 julianleahy.com</p>
+        </div>
+    </footer>
+
+
+</body>
+
 </html>
