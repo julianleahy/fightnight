@@ -103,10 +103,12 @@ body {
 
 /* =Header */
 header {
-    background: url("~images/bcg_header_s.jpg") no-repeat top center;
+    background: #222222 url('~images/bcg_header_s.jpg') no-repeat top center;
     color: #fff;
     text-align: center;
     padding: 140px 0 20px 0;
+    position: relative;
+    z-index: 2;
 }
 
 header h1 {
@@ -128,6 +130,7 @@ header p {
     color: #fff;
     position: relative;
     background-size: auto 45px;
+    z-index: 2;
 }
 
 .boxer {
@@ -200,12 +203,13 @@ header p {
     background-color: #e7e7e7;
     position: relative;
     height: 344px;
+    z-index: -1;
 }
 
 #stage {
     width: 300px;
     height: 273px;
-    background: url("~images/bcg_ring.png") no-repeat top right;
+    background: url('~images/bcg_ring.png') no-repeat top right;
     background-size: 300px 273px;
     position: absolute;
     top: 35px;
@@ -216,6 +220,8 @@ header p {
 footer {
     background-color: #ffffff;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 @media only screen and (min-width: 768px) {
@@ -284,12 +290,14 @@ footer {
     }
 
     #stage {
+        position: fixed;
         width: 718px;
         height: 654px;
         background-size: 718px 654px;
-        top: 130px;
+        top: 50%;
         left: 50%;
         margin-left: -359px;
+        margin-top: -327px;
     }
 }
 
