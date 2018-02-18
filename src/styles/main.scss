@@ -8,7 +8,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html {
+html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -101,52 +101,158 @@ body {
     max-width: 1140px;
 }
 
-
 /* =Header */
 header {
-    background: url('~images/bcg_header_s.jpg') no-repeat top center;
+    background: url("~images/bcg_header_s.jpg") no-repeat top center;
     color: #fff;
     text-align: center;
     padding: 140px 0 20px 0;
 }
-    header h1 {
-        font-size: 1.5em;
-        line-height: 1.2em;
-        text-transform: uppercase;
-    }
-    header p {
-        color: #f3cc11;
-        line-height: 1.2em;
-    }
+
+header h1 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+header p {
+    color: #f3cc11;
+    line-height: 1.2em;
+}
+
+/* =Profiles */
+
+#profiles {
+    background: url("~images/bcg_profiles.png") repeat-y top center;
+    color: #fff;
+    position: relative;
+    background-size: auto 45px;
+}
+
+.boxer {
+    width: 45%;
+    margin: 0 5%;
+    padding: 210px 0 20px 0;
+    position: relative;
+}
+
+.boxerA {
+    margin-left: 0;
+}
+
+.boxer h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.boxer p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.boxerA {
+    float: left;
+    margin-left: 0;
+}
+
+.boxerB {
+    float: right;
+    margin-right: 0;
+}
+
+.boxerImg {
+    width: 138px;
+    height: 152px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -69px;
+}
+
+#profiles:after {
+    content: 'VS';
+    display: block;
+    position: absolute;
+    top: 218px;
+    left: 50%;
+    width: 75px;
+    margin-left: -39px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.boxerA .boxerImg {
+    background: url("~images/img_boxerA.png") no-repeat top left;
+    background-size: 138px 152px;
+}
+
+.boxerB .boxerImg {
+    background: url("~images/img_boxerB.png") no-repeat top left;
+    background-size: 138px 152px;
+}
 
 @media only screen and (min-width: 768px) {
     /* =General */
 
     /* =Header */
     header {
-        background-image: url('~images/bcg_header.jpg');
+        background-image: url("~images/bcg_header.jpg");
         padding: 420px 0 20px 0;
     }
+
     header h1 {
         font-size: 3.125em;
     }
+
     header p {
         font-size: 2em;
         line-height: 1.2em;
     }
+
+    /* =Profiles */
+    #profiles {
+        background-size: auto auto;
+    }
+
+    #profiles:after {
+        top: 170px;
+        width: 150px;
+        margin-left: -78px;
+        font-size: 3.75em;
+    }
+
+    .boxer {
+        padding-top: 380px;
+    }
+
+    .boxer h2 {
+        font-size: 2.5em;
+        line-height: 1.12em;
+        text-align: left;
+    }
+
+    .boxer p {
+        font-family: 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
+        font-weight: normal;
+    }
+
+    .boxerImg {
+        width: 276px;
+        height: 305px;
+        top: 60px;
+        margin-left: -138px;
+        background-size: 100% 100%;
+    }
+
+    .boxerA .boxerImg,
+    .boxerB .boxerImg {
+        background-size: 100% 100%;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -238,9 +344,7 @@ header {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+@media print, (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -286,6 +390,7 @@ header {
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
