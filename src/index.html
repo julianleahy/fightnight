@@ -29,7 +29,11 @@
         </header>
 
         <main>
-            <div id="profiles">
+            <!-- move the background position for subtle effect -->
+            <div id="profiles"
+                 data-bottom-top="background-position: 50% 0%"
+                 data-top-bottom="background-position: 50% -20%"
+            >
                 <div class="wrapper clearfix">
 
                     <div class="boxer boxerA">
@@ -51,8 +55,13 @@
 
         </main>
 
-        <!-- dev some space to scroll -->
-        <div style="min-height:1000px"></div>
+        <div id="boxingRing">
+            <div class="wrapper clearfix">
+
+                <div id="stage"></div>
+
+            </div>
+        </div>
 
      
     </body>

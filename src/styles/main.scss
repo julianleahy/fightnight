@@ -124,6 +124,7 @@ header p {
 
 #profiles {
     background: url("~images/bcg_profiles.png") repeat-y top center;
+    background-attachment: fixed;
     color: #fff;
     position: relative;
     background-size: auto 45px;
@@ -195,6 +196,23 @@ header p {
     background-size: 138px 152px;
 }
 
+#boxingRing {
+    background-color: #e7e7e7;
+    position: relative;
+    height: 344px;
+}
+
+#stage {
+    width: 300px;
+    height: 273px;
+    background: url("~images/bcg_ring.png") no-repeat top right;
+    background-size: 300px 273px;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -150px;
+}
+
 @media only screen and (min-width: 768px) {
     /* =General */
 
@@ -251,6 +269,22 @@ header p {
     .boxerA .boxerImg,
     .boxerB .boxerImg {
         background-size: 100% 100%;
+    }
+
+    /* =Boxing Ring */
+    #boxingRing {
+        background-color: #e7e7e7;
+        position: relative;
+        height: 925px;
+    }
+
+    #stage {
+        width: 718px;
+        height: 654px;
+        background-size: 718px 654px;
+        top: 130px;
+        left: 50%;
+        margin-left: -359px;
     }
 }
 
