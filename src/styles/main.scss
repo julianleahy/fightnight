@@ -233,10 +233,13 @@ header {
 
 /* =Footer */
 footer {
-    background-color: #ffffff;
-    text-align: center;
+    background-color: #1F1F1F;
     position: relative;
     z-index: 2;
+
+    .signature {
+        height: 80px;
+    }
 }
 
 // git link

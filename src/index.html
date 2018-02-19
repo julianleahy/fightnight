@@ -145,12 +145,15 @@
                     
                         <div id="moves"
                             data-anchor-target="#boxingRing"
-                            data--25p-top="opacity: 0; background-image: !url(img/img_move1.png);"
-                            data--45p-top="opacity: 1; background-image: !url(img/img_move2.png);"
-                            data--65p-top="opacity: 1; background-image: !url(img/img_move3.png);"
-                            data--85p-top="opacity: 1; background-image: !url(img/img_move1.png);"
-                            data--90p-top="opacity: 0; background-image: !url(img/img_move1.png);"
-                        ></div>
+                            data--25p-top="opacity: 0; background-image: !url(images/img_move1.png);"
+                            data--45p-top="opacity: 1; background-image: !url(images/img_move2.png);"
+                            data--65p-top="opacity: 1; background-image: !url(images/img_move3.png);"
+                            data--85p-top="opacity: 1; background-image: !url(images/img_move1.png);"
+                            data--90p-top="opacity: 0; background-image: !url(images/img_move1.png);"
+                            data-img=<%= require('./images/img_move2.png') %>
+                            data-img=<%= require('./images/img_move3.png') %>
+                        >
+                        </div>
 
                     </div>
                     
@@ -281,9 +284,11 @@
         </main><!-- /main -->
 
     <!-- change bg color at end of scroll using absolute position -->
-    <footer data-end="background-color: rgb(255,255,255)" data-25-end="background-color: rgb(231,231,231)">
+    <footer>
         <div class="wrapper clearfix">
-            <p>&copy; 2018 julianleahy.com</p>
+            <a href="http://julianleahy.com/" target="_blank" title="julianleahy.com">
+            <img class="signature"  src=<%= require('./images/signature.svg') %> />
+            </a>
         </div>
     </footer>
 
