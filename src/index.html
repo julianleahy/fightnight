@@ -38,10 +38,8 @@
 
         </div>
     </header>
-
     <main>
-        <!-- move the background position for subtle effect -->
-        <div id="profiles"
+            <div id="profiles"
                 data-bottom-top="background-position: 50% 0%"
                 data-top-bottom="background-position: 50% -20%"
             >
@@ -60,7 +58,7 @@
                             data--80-bottom="opacity: 1; transform:  translateX(0%)"
                         >
                             <h2>Shane <br />Cameron</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <p>Scrolling animations are his passion, he is always fired up when the mousewheel is moving.</p>
                         </div>
                     </div>
 
@@ -76,29 +74,31 @@
                             data--80-bottom="opacity: 0; transform: translateX(-100%)"
                             data--120-bottom="opacity: 1; transform:  translateX(0%)"
                         >
-                        <h2>Joseph <br />Parker</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <h2>Joseph <br />Parker</h2>
+                            <p>Mentioning the word parallax or scrolling always brings the best out of his right hook.</p>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-        <div id="boxingRing">
-            <div class="wrapper clearfix">
-                
-                    <div id="stage"
-                        data-bottom-top="transform[swing]:scale(0.5) rotate(120deg)" 
-                        data-top="transform[swing]:scale(1) rotate(0deg)"
-                        data--117p-top="transform[swing]:scale(1) rotate(0deg)" 
-                        data--155p-top="transform[swing]:scale(0.6) rotate(-15deg)"
-                        data--169p-top="transform[swing]:scale(1) rotate(10deg)"
-                        data--190p-top="transform[swing]:scale(1) rotate(0deg)"
-                        data--500p-top="transform[swing]:scale(0.3) rotate(-360deg)"
-                        data-anchor-target="#boxingRing"
-                    >       
+            <div id="boxingRing"
+                data-bottom-top="z-index:!-1"
+                data-top="z-index:!1"
+            >
+                <div class="wrapper clearfix">
 
-                    <div class="boxerTop boxerTopA"
+                        <div id="stage"
+                            data-bottom-top="transform[swing]:scale(0.5) rotate(120deg)" 
+                            data-top="transform[swing]:scale(1) rotate(0deg)"
+                            data--117p-top="transform[swing]:scale(1) rotate(0deg)" 
+                            data--155p-top="transform[swing]:scale(0.6) rotate(-15deg)"
+                            data--169p-top="transform[swing]:scale(1) rotate(10deg)"
+                            data--190p-top="transform[swing]:scale(1) rotate(0deg)"
+                            data--500p-top="transform[swing]:scale(0.3) rotate(-360deg)"
+                            data-anchor-target="#boxingRing"
+                        >
+                        <div class="boxerTop boxerTopA"
                             data-2p-top="opacity: 0; transform[bounce]:scale(0.5); transform:translateY(0%) translateX(0%) rotate(0deg); z-index: !1" 
                             data-top="opacity: 1; transform[bounce]:scale(1); transform:translateY(0%) translateX(0%) rotate(0deg); z-index: !1"
                             data--117p-top="opacity: 1; transform[bounce]:scale(1); transform:translateY(0%) translateX(0%) rotate(0deg); z-index: !1"
@@ -141,19 +141,19 @@
                             data--250p-top="opacity: 0; transform[bounce]:scale(1); transform:translateY(-45%) translateX(-125%) rotate(105deg); z-index: !4"
                             data-anchor-target="#boxingRing"
                         ></div>
+                    
+                        <div id="moves"
+                            data-anchor-target="#boxingRing"
+                            data--25p-top="opacity: 0; background-image: !url(img/img_move1.png);"
+                            data--45p-top="opacity: 1; background-image: !url(img/img_move2.png);"
+                            data--65p-top="opacity: 1; background-image: !url(img/img_move3.png);"
+                            data--85p-top="opacity: 1; background-image: !url(img/img_move1.png);"
+                            data--90p-top="opacity: 0; background-image: !url(img/img_move1.png);"
+                        ></div>
 
-                    <div id="moves" data-anchor-target="#boxingRing" data--450-top="opacity: 0; background-image: !url('images/img_move1.png');"
-                        data--600-top="opacity: 1; background-image: !url('images/img_move2.png');" data--750-top="opacity: 1; background-image: !url('images/img_move3.png');"
-                        data--900-top="opacity: 1; background-image: !url('images/img_move1.png');" data--1050-top="opacity: 0; background-image: !url('images/img_move1.png');"
-                        data-img=<%=require( './images/img_move2.png') %>
-                        data-img=<%=require('./images/img_move3.png') %> >
                     </div>
-
-                </div>
-
-
-                <!-- the center data attributes 'pause' the div for 300px -->
-                <div id="round1"
+                    
+                    <div id="round1"
                         data-anchor-target="#boxingRing"
                         data-top="opacity: 0; transform:translateY(200px)"
                         data--7p-top="opacity: 1; transform:translateY(0px)"
@@ -168,34 +168,101 @@
                         data--115p-top="opacity: 1; transform:translateY(0px)"
                         data--117p-top="opacity: 0; transform:translateY(-400px)"  
                     >Round 2</div>
+                    
+                    
+                    <div class="indicator"
+                        data-anchor-target="#boxingRing"
+                        data-top="opacity: !0; background-color: !rgb(171,204,20); height: 0px" 
+                        data--17p-top="opacity: !1; background-color: !rgb(171,204,20); height: 5px"
+                        data--35p-top="opacity: !1; background-color: !rgb(255,204,20); height: 70px"
+                        data--40p-top="opacity: !1; background-color: !rgb(255,204,20); height: 120px"
+                        data--47p-top="opacity: !1; background-color: !rgb(255,204,20); height: 70px"
+                        data--60p-top="opacity: !1; background-color: !rgb(231,76,60); height: 200px"
+                        data--75p-top="opacity: !1; background-color: !rgb(231,76,60); height: 250px"
+                        data--80p-top="opacity: !1; background-color: !rgb(231,76,60); height: 210px"
+                        data--90p-top="opacity: !1; background-color: !rgb(231,76,60); height: 300px"
 
-                <div class="indicator" data-anchor-target="#boxingRing" data-top="opacity: !0; background-color: !rgb(171,204,20); height: 0px"
-                    data--17p-top="opacity: !1; background-color: !rgb(171,204,20); height: 5px" data--35p-top="opacity: !1; background-color: !rgb(255,204,20); height: 70px"
-                    data--40p-top="opacity: !1; background-color: !rgb(255,204,20); height: 120px" data--47p-top="opacity: !1; background-color: !rgb(255,204,20); height: 70px"
-                    data--60p-top="opacity: !1; background-color: !rgb(231,76,60); height: 200px" data--75p-top="opacity: !1; background-color: !rgb(231,76,60); height: 250px"
-                    data--80p-top="opacity: !1; background-color: !rgb(231,76,60); height: 210px" data--90p-top="opacity: !1; background-color: !rgb(231,76,60); height: 300px"
-                    data--117p-top="opacity: !1; background-color: !rgb(171,204,20); height: 5px" data--135p-top="opacity: !1; background-color: !rgb(255,204,20); height: 70px"
-                    data--140p-top="opacity: !1; background-color: !rgb(255,204,20); height: 120px" data--147p-top="opacity: !1; background-color: !rgb(255,204,20); height: 70px"
-                    data--160p-top="opacity: !1; background-color: !rgb(231,76,60); height: 200px" data--175p-top="opacity: !1; background-color: !rgb(231,76,60); height: 250px"
-                    data--180p-top="opacity: !1; background-color: !rgb(231,76,60); height: 210px" data--190p-top="opacity: !1; background-color: !rgb(231,76,60); height: 300px"
-                    data--220p-top="opacity: !0; background-color: !rgb(231,76,60); height: 300px">
-                    <p>Fatigue</p>
-                </div>
+                        data--117p-top="opacity: !1; background-color: !rgb(171,204,20); height: 5px"
+                        data--135p-top="opacity: !1; background-color: !rgb(255,204,20); height: 70px"
+                        data--140p-top="opacity: !1; background-color: !rgb(255,204,20); height: 120px"
+                        data--147p-top="opacity: !1; background-color: !rgb(255,204,20); height: 70px"
+                        data--160p-top="opacity: !1; background-color: !rgb(231,76,60); height: 200px"
+                        data--175p-top="opacity: !1; background-color: !rgb(231,76,60); height: 250px"
+                        data--180p-top="opacity: !1; background-color: !rgb(231,76,60); height: 210px"
+                        data--190p-top="opacity: !1; background-color: !rgb(231,76,60); height: 300px"
 
-                <div class="indicator indicatorB" data-anchor-target="#boxingRing" data-top="opacity: !0; background-color: !rgb(171,204,20); height: 0px"
-                    data--17p-top="opacity: !1; background-color: !rgb(171,204,20); height: 5px" data--35p-top="opacity: !1; background-color: !rgb(255,204,20); height: 20px"
-                    data--45p-top="opacity: !1; background-color: !rgb(255,204,20); height: 220px" data--49p-top="opacity: !1; background-color: !rgb(255,204,20); height: 190px"
-                    data--63p-top="opacity: !1; background-color: !rgb(231,76,60); height: 240px" data--82p-top="opacity: !1; background-color: !rgb(255,204,20); height: 200px"
-                    data--117p-top="opacity: !1; background-color: !rgb(171,204,20); height: 5px" data--135p-top="opacity: !1; background-color: !rgb(255,204,20); height: 20px"
-                    data--145p-top="opacity: !1; background-color: !rgb(255,204,20); height: 220px" data--149p-top="opacity: !1; background-color: !rgb(255,204,20); height: 190px"
-                    data--163p-top="opacity: !1; background-color: !rgb(231,76,60); height: 240px" data--182p-top="opacity: !1; background-color: !rgb(231,76,60); height: 300px"
-                    data--220p-top="opacity: !0; background-color: !rgb(231,76,60); height: 300px">
-                    <p>Fatigue</p>
+                        data--220p-top="opacity: !0; background-color: !rgb(231,76,60); height: 300px"
+                    >
+                        <p>Fatigue</p>
+                    </div>
+
+                    <div class="indicator indicatorB"
+                        data-anchor-target="#boxingRing"
+                        data-top="opacity: !0; background-color: !rgb(171,204,20); height: 0px" 
+                        data--17p-top="opacity: !1; background-color: !rgb(171,204,20); height: 5px"
+                        data--35p-top="opacity: !1; background-color: !rgb(255,204,20); height: 20px"
+                        data--45p-top="opacity: !1; background-color: !rgb(255,204,20); height: 220px"
+                        data--49p-top="opacity: !1; background-color: !rgb(255,204,20); height: 190px"
+                        data--63p-top="opacity: !1; background-color: !rgb(231,76,60); height: 240px"
+                        data--82p-top="opacity: !1; background-color: !rgb(255,204,20); height: 200px"
+
+                        data--117p-top="opacity: !1; background-color: !rgb(171,204,20); height: 5px"
+                        data--135p-top="opacity: !1; background-color: !rgb(255,204,20); height: 20px"
+                        data--145p-top="opacity: !1; background-color: !rgb(255,204,20); height: 220px"
+                        data--149p-top="opacity: !1; background-color: !rgb(255,204,20); height: 190px"
+                        data--163p-top="opacity: !1; background-color: !rgb(231,76,60); height: 240px"
+                        data--182p-top="opacity: !1; background-color: !rgb(231,76,60); height: 300px"
+                        
+                        data--220p-top="opacity: !0; background-color: !rgb(231,76,60); height: 300px"
+                    >
+                        <p>Fatigue</p>
+                    </div>
+                    
+                    <div id="winnersTrophy"
+                        data--130p-top="transform: translateY(80%); background-color: rgba(31,31,31,0);"
+                        data--200p-top="transform: translateY(50%); background-color: rgba(31,31,31,1);"
+                        data-anchor-target="#boxingRing"
+                    ></div>
+
+
+                    <div class="winnersText">
+                        <h2
+                            data-top="display: none;"
+                            data-800-end="display: block; opacity: 0"
+                            data-500-end="display: block; opacity: 1"
+                            data-anchor-target="body"
+                        >And the winner is...!</h2>
+                        <div class="copy"
+                            data-top="display: none;"
+                            data-900-end="display: block; opacity: 0"
+                            data-500-end="display: block; opacity: 0"
+                            data-end="display: block; opacity: 1"
+                            data-anchor-target="body"
+                        >
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, fugit aut <br /><br />
+                                <span class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque obcaecati maxime natus commodi ad labore rem enim placeat consectetur modi?</span>
+                            </p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="beam"
+                        data-top="display: none; opacity: 0"
+                        data-1200-end="display: block; opacity: 0"
+                        data-1100-end="display: block; opacity: 1"
+                        data-anchor-target="body"
+                    ></div>
+                    <div id="belt"
+                        data-top="display: none; opacity: 0; transform[bounce]: translateY(-100%) scale(0.7);"
+                        data-1100-end="display: block; opacity: 1; transform[bounce]: translateY(-100%) scale(0.7);"
+                        data-900-end="display: block; opacity: 1; transform[bounce]: translateY(0%) scale(1);"
+                        data-anchor-target="body"
+                    ></div>
+
                 </div>
             </div>
-        </div>
 
-    </main>
+        </main><!-- /main -->
 
     <!-- change bg color at end of scroll using absolute position -->
     <footer data-end="background-color: rgb(255,255,255)" data-25-end="background-color: rgb(231,231,231)">
