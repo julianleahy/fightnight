@@ -28,8 +28,9 @@
 
             <div data-100-top="opacity: 1" data-top="opacity: 0">
 
-            <h1 class="title">Cameron V<span style="text-transform:lowercase">s</span> Parker</h1>
-            <p>Get Ready For Fight Night!</p>
+                <h1 class="title">Cameron 
+                    V<span style="text-transform:lowercase">s</span> Parker</h1>
+                <p>Get Ready For Fight Night!</p>
 
             </div>
 
@@ -41,24 +42,16 @@
         <div id="profiles" data-bottom-top="background-position: 50% 0%" data-top-bottom="background-position: 50% -20%">
             <div class="wrapper clearfix">
 
-                <div class="boxer boxerA"
-                    data--280-top="opacity:1"
-                    data--380-top="opacity:0">
-                    <div class="boxerImg"
-                        data-bottom="opacity: 0; transform: scale(0.5)"
-                        data--40-bottom="opacity: 1; transform: scale(1)"></div>
+                <div class="boxer boxerA" data--280-top="opacity:1" data--380-top="opacity:0">
+                    <div class="boxerImg" data-bottom="opacity: 0; transform: scale(0.5)" data--40-bottom="opacity: 1; transform: scale(1)"></div>
                     <h2>Shane
                         <br />Cameron</h2>
                     <p>Donec consectetur egestas auctor. Nullam mattis lectus vel tellus semper, vel lacinia justo fringilla.
                         Vestibulum semper pulvinar accumsan.</p>
                 </div>
 
-                <div class="boxer boxerB"
-                    data--280-top="opacity:1"
-                    data--380-top="opacity:0">
-                        <div class="boxerImg"
-                        data--40-bottom="opacity: 0; transform: scale(0.5)"
-                        data--80-bottom="opacity: 1; transform: scale(1)"></div>
+                <div class="boxer boxerB" data--280-top="opacity:1" data--380-top="opacity:0">
+                    <div class="boxerImg" data--40-bottom="opacity: 0; transform: scale(0.5)" data--80-bottom="opacity: 1; transform: scale(1)"></div>
                     <h2>Joseph
                         <br />Parker</h2>
                     <p>Donec consectetur egestas auctor. Nullam mattis lectus vel tellus semper, vel lacinia justo fringilla.
@@ -70,34 +63,30 @@
 
         <div id="boxingRing">
             <div class="wrapper clearfix">
-                <div id="stage"
+                <div id="stage" data-anchor-target="#boxingRing" data-bottom-top="transform[swing]:scale(0.5) rotate(120deg)" data-top="transform[swing]:scale(1) rotate(0deg)">
+
+                    <div class="boxerTop boxerTopA" data-anchor-target="#boxingRing" data-100-top="opacity:0; transform[bounce]:scale(0.5)" data-top="opacity:1; transform[bounce]:scale(1)"></div>
+
+                    <div class="boxerTop boxerTopB" data-anchor-target="#boxingRing" data-50-top="opacity:0; transform[bounce]:scale(0.5)" data-top="opacity:1; transform[bounce]:scale(1)"></div>
+
+                </div>
+
+                <!-- the center data attributes 'pause' the div for 300px -->
+                <div id="round1"
                     data-anchor-target="#boxingRing"
-                    data-bottom-top="transform[swing]:scale(0.5) rotate(120deg)"
-                    data-top="transform[swing]:scale(1) rotate(0deg)"
+                    data-top="opacity:0; transform:translateY(200px)"
+                    data--100-top="opacity:1; transform:translateY(0px)"
+                    data--400-top="opacity:1; transform:translateY(0px)"
+                    data--450-top="opacity:0; transform:translateY(-400px)"
                 >
-
-                <div class="boxerTop boxerTopA"
-                    data-anchor-target="#boxingRing"
-                    data-100-top="opacity:0; transform[bounce]:scale(0.5)"
-                    data-top="opacity:1; transform[bounce]:scale(1)"
-                ></div>
-
-                <div class="boxerTop boxerTopB"
-                    data-anchor-target="#boxingRing"
-                    data-50-top="opacity:0; transform[bounce]:scale(0.5)"
-                    data-top="opacity:1; transform[bounce]:scale(1)"
-                ></div>
-
-            </div>
+                Round 1</div>
             </div>
         </div>
 
     </main>
 
     <!-- change bg color at end of scroll using absolute position -->
-    <footer 
-        data-end="background-color: rgb(255,255,255)"
-        data-25-end="background-color: rgb(231,231,231)">
+    <footer data-end="background-color: rgb(255,255,255)" data-25-end="background-color: rgb(231,231,231)">
         <div class="wrapper clearfix">
             <p>&copy; 2018 julianleahy.com</p>
         </div>
