@@ -1,7 +1,7 @@
 {
-  "name": "webpack-workflow",
+  "name": "fightnight",
   "version": "1.0.0",
-  "description": "workflow setup for webpack",
+  "description": "parallax demo using skrollr",
   "main": "index.js",
   "browserslist": [
     "> 1%"
