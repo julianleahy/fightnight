@@ -231,6 +231,13 @@ header {
             color: #f3cc11;
         }
 
+        .demo{
+            color: #fff;
+            font-size: 1.3em;
+
+            a { color: #fff}
+        }
+
 /* =Footer */
 footer {
     background-color: #1F1F1F;
@@ -241,6 +248,7 @@ footer {
         height: 80px;
     }
 }
+
 
 // git link
 .git-wrap {
